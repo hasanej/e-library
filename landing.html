@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="UTF-8">
+        <title>Perpustakaan - Home</title>
+        <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css"> 
+    </head>
+
+    <body>
+    <div class="form-small">
+        <h1>Perpustakaan Universitas El-Jabir</h1>
+    </div>
+    
+    <div class="form">
+        <p align="center" style="color:#ffffff">
+            Silahkan Login terlebih dahulu atau mendaftar jika belum memiliki akun 
+            perpustakaan
+        </p><br>
+        <ul class="tab-group">
+            <li class="tab active"><a href="#pustakawan">Pustakawan</a></li>
+            <li class="tab"><a href="#peminjam">Peminjam</a></li>
+        </ul>
+        
+        <div class="tab-content">
+        <div id="pustakawan">   
+          <h1>Login Sebagai Pustakawan</h1>
+          
+          <form action="pustakawan.php" method="post">
+          
+            <div class="field-wrap">
+            <label>
+              Username<span class="req">*</span>
+            </label>
+            <input type="text" required autocomplete="off" name="pustakawan_user"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Password<span class="req">*</span>
+            </label>
+            <input type="password" required autocomplete="off" name="pustakawan_pass"/>
+          </div>
+          
+          <p class="forgot"><a href="#">Lupa Password?</a></p>
+          
+          <button class="button button-block"/>Masuk</button>
+          
+          </form>
+
+        </div>
+        </div>
+        
+        <div class="tab-content">
+        <div id="peminjam">   
+              
+          <h1>Login Sebagai Peminjam</h1>
+          
+          <form action="peminjam.php" method="post">
+            <div class="field-wrap">
+            <label>
+              Username<span class="req">*</span>
+            </label>
+            <input type="text" required autocomplete="off" name="peminjam_user"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Password<span class="req">*</span>
+            </label>
+            <input type="password" required autocomplete="off" name="peminjam_pass"/>
+          </div>
+          
+          <p class="forgot"><a href="#">Lupa Password?</a></p>
+          <p class="forgot"><a href="signup.html">Daftar Baru</a></p>
+          <button class="button button-block"/>Masuk</button>
+               
+          </form>
+        </div>
+        </div>
+    </div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="js/index.js"></script>
+    </body>
+</html>

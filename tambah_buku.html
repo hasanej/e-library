@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Tambah Buku</title>
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css"> 
+  </head>
+
+  <body>
+
+     <div class="form-small">
+        <h1>Tambah Data Buku</h1>
+    </div>
+      
+      <div class="form">
+      
+      <div class="tab-content">
+        <div id="tambah">   
+          
+          <form action="tambah_buku.php" method="post">
+          
+            <div class="field-wrap">
+              <label>
+                Judul Buku<span class="req">*</span>
+              </label>
+              <input type="text" required autocomplete="off" name="judul"/>
+            </div>
+        
+            <div class="field-wrap">
+              <label>
+                Pengarang Buku<span class="req">*</span>
+              </label>
+              <input type="text" required autocomplete="off" name="pengarang"/>
+            </div>
+
+          <div class="field-wrap">
+            <label>
+              Penerbit<span class="req">*</span>
+            </label>
+            <input type="text"required autocomplete="off" name="penerbit"/>
+          </div>
+          
+          <div class="field-wrap">
+              <label>
+                Tahun Terbit<span class="req">*</span>
+              </label>
+              <input type="text"required autocomplete="off" name="tahun"/>
+            </div>      
+              
+         
+          <button type="submit" class="button button-block"/>Tambah</button><br>
+          <a href="home_admin.html"><button type="submit" class="button button-block"/>Batal</button><a>
+          
+          </form>
+
+        </div>
+    
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
